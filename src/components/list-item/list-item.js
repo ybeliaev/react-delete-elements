@@ -8,7 +8,7 @@ export default class ListItem extends Component {
   };
   render() {
     const { label, important, done, onDeletedItem } = this.props;
-    let classNames = "list-item";
+    let classNames = "wrapper-list-item";
     if (done) {
       classNames += " done";
     }

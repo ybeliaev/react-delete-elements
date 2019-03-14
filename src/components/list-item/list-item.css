@@ -25,16 +25,16 @@
   flex: 1;
 }
 /* *************IMPORTANT**************** */
-.list-item.important {
+.wrapper-list-item.important {
   color: rgb(0, 112, 204);
   font-weight: 700;
 }
-.list-item.important .btn-exclamation {
+.wrapper-list-item.important .btn-exclamation {
   border: 2px solid #2196f3;
   background-color: #2196f3;
 }
 /* ****************DONE****************** */
-.list-item.done .list-item-label {
+.wrapper-list-item.done .list-item-label {
   text-decoration: line-through;
 }
 .list-item-label {
