@@ -32,26 +32,15 @@ export default class App extends Component {
       };
     });
   };
-
+  makeFilterChange = filter => {
+    this.setState({ filter });
+  };
   render() {
     const { someData } = this.state;
+
     return (
-      <div className="todo-app">
-        <AppHeader toDo={todoCount} done={doneCount} />
-        <div className="top-panel">
-          <SeachPanel makeSearchChange={this.makeSearch} />
-          <ItemStatusFilter
-            currentFilter={filter}
-            onFilterChange={this.makeFilterChange}
-          />
-        </div>
-        <TodoList
-          todos={visibleItems}
-          onDeleted={this.makeDelete}
-          onToggleImportant={this.makeToggleImportant}
-          onToggleDone={this.makeToggleDone}
-        />
-        <ItemAddForm onAddItem={this.makeNewItem} />
+      <div className="app">
+        <List someProps={someData} onDeleted={this.makeDelete} />
       </div>
     );
   }
