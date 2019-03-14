@@ -40,6 +40,7 @@ export default class App extends Component {
 
     return (
       <div className="app">
+        <h1>Пример удаление элемента</h1>
         <List someProps={someData} onDeleted={this.makeDelete} />
       </div>
     );
