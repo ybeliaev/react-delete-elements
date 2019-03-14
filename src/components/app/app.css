@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+ul {
+  list-style: none;
+}
+input {
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.todo-app {
+  margin: 10px auto;
+  padding: 10px;
+  max-width: 450px;
+}
+.top-panel {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
