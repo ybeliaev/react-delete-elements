@@ -23,10 +23,9 @@ export default class App extends Component {
   }
   makeDelete = id => {
     this.setState(({ someData }) => {
-      const idx = someData.findIndex(el => el.id == id);
-      const before = someData.slice(0, idx);
-      const after = someData.slice(idx + 1);
-      const newArr = [...before, ...after];
+      const idx = someData.findIndex(el => el.id === id);
+
+      const newArr = [someData.slice(0, idx), someData.slice(0, idx)];
       return {
         someData: newArr
       };
@@ -40,7 +39,7 @@ export default class App extends Component {
 
     return (
       <div className="app">
-        <h1>Пример удаление элемента</h1>
+        <h1>Пример удаления элемента</h1>
         <List someProps={someData} onDeleted={this.makeDelete} />
       </div>
     );
