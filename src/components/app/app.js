@@ -31,9 +31,7 @@ export default class App extends Component {
       };
     });
   };
-  // makeFilterChange = filter => {
-  //   this.setState({ filter });
-  // };
+
   render() {
     const { someData } = this.state;
 
