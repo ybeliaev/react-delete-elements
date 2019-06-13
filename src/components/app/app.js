@@ -25,7 +25,8 @@ export default class App extends Component {
     this.setState(({ someData }) => {
       const idx = someData.findIndex(el => el.id === id);
 
-      const newArr = [...someData.slice(0, idx), ...someData.slice(0, idx)];
+      const newArr = [...someData.slice(0, idx), ...someData.slice(idx + 1)];
+      console.log(newArr);
       return {
         someData: newArr
       };
